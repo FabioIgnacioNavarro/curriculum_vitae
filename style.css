@@ -17,6 +17,7 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+
 header {
     display: flex;
     align-items: center;
@@ -91,4 +92,49 @@ a:hover {
     border-radius: 4px;
     font-size: 0.85em;
     margin: 2px;
+}
+
+/* Definimos los colores base (Modo Claro) */
+:root {
+    --bg-color: #f4f7f6;
+    --container-bg: #ffffff;
+    --text-color: #333;
+    --primary-color: #2c3e50;
+    --secondary-color: #2980b9;
+}
+
+/* Colores para el Modo Oscuro */
+.dark-mode {
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --primary-color: #3498db;
+    --secondary-color: #5dade2;
+}
+
+/* Aplicamos las variables a los elementos */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Para que el cambio sea suave */
+}
+
+.container {
+    background-color: var(--container-bg);
+    color: var(--text-color);
+}
+
+/* El botón de la esquina */
+#btn-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000; /* Para que siempre esté arriba */
 }
