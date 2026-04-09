@@ -1,0 +1,94 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.perfil-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    margin-left: 20px;
+}
+
+h2 {
+    color: #2980b9;
+    border-left: 5px solid #2980b9;
+    padding-left: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.job-date {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    background: #e1ecf4;
+    color: #39739d;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    margin: 2px;
+}
